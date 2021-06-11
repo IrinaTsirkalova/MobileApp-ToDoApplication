@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/fNameUpdateEditText"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="52dp"
+        android:background="#80FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textColor="#040202"
+        android:textColorHint="#01090B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/registrationTextView"
+        android:layout_width="414dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:background="#80FFFFFF"
+        android:gravity="center"
+        android:text="Registration"
+        android:textColor="#050202"
+        android:textColorHint="#070101"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lNameUpdateEditText"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="#80FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textColor="#070000"
+        android:textColorHint="#01090B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fNameUpdateEditText" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="#80FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lNameUpdateEditText" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="#80FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="EnterPassword"
+        android:inputType="textPassword"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
+
+    <EditText
+        android:id="@+id/repeatPasswordEditText"
+        android:layout_width="210dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="#80FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Repeat Password"
+        android:inputType="textPassword"
+        android:textColor="#0B0101"
+        android:textColorHint="#031315"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <RadioGroup
+        android:id="@+id/genderRadioButton"
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="16dp"
+        android:background="#80FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordEditText">
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/otherRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#80FFFFFF"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderRadioButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
